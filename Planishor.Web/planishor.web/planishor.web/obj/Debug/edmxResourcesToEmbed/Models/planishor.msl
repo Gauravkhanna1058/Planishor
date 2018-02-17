@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="planishorModelStoreContainer" CdmEntityContainer="planishorEntities">
+    <EntitySetMapping Name="Orders">
+      <EntityTypeMapping TypeName="planishorModel.Order">
+        <MappingFragment StoreEntitySet="Orders">
+          <ScalarProperty Name="discount" ColumnName="discount" />
+          <ScalarProperty Name="quantity" ColumnName="quantity" />
+          <ScalarProperty Name="product_id" ColumnName="product_id" />
+          <ScalarProperty Name="order_date" ColumnName="order_date" />
+          <ScalarProperty Name="order_id" ColumnName="order_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="planishorModel.Product">
+        <MappingFragment StoreEntitySet="Product">
+          <ScalarProperty Name="product_price" ColumnName="product_price" />
+          <ScalarProperty Name="product_modified_date" ColumnName="product_modified_date" />
+          <ScalarProperty Name="product_created_date" ColumnName="product_created_date" />
+          <ScalarProperty Name="product_image" ColumnName="product_image" />
+          <ScalarProperty Name="product_desc" ColumnName="product_desc" />
+          <ScalarProperty Name="product_name" ColumnName="product_name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductInStocks">
+      <EntityTypeMapping TypeName="planishorModel.ProductInStock">
+        <MappingFragment StoreEntitySet="ProductInStock">
+          <ScalarProperty Name="quantity" ColumnName="quantity" />
+          <ScalarProperty Name="product_id" ColumnName="product_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
